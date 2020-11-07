@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5146af;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #f6f5f1;
+}
+
+/* Navigation Bar */
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: 600px 400px;
+    align-content: center;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+}
+
+.nav-bar .icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon span{
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.icon img{
+    width: 60px;
+    grid-column: 1/2;
+}
+
+.nav-bar ul{
+    grid-column: 2/3;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #f6f5f1;
+}
+
+.nav-bar a:hover{
+    border-bottom: 1px solid #f6f5f1;
+}
+
+/* Sign up */
+
+.sign-up-form{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 1200px;
+    margin: 50px auto 70px auto;
+}
+
+.sign-up-form img{
+    width: 590px;
+}
+
+.input-fields{
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.input-fields .site-name{
+    font-family: monospace;
+    display: inline-block;
+}
+
+input{
+    display: block;
+    width: 60%;
+    height: 40px;
+    margin: 10px auto 10px auto;
+    background-color: #f6f5f1;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #495464;
+}
+
+.input-fields span{
+    display: none;
+}
+
+
+
+input[type="submit"] {
+    background-color: #bc6ff1;
+    color: #f6f5f1;
+    font-weight: bold;
+    width: 40%;
+    transition: color 0.5s linear, background-color 0.5s linear;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: #495464;
+    background-color: #f6f5f1;
+    transition: color 0.5s linear, background-color 0.5s linear;
+}
+
+.e-warning{
+    display: block !important;
+}
+
+.p-warning{
+    display: block !important;
+}
+
+.t-warning{
+    display: block !important;
+}
+
+/* footer */
+
+footer{
+    margin: 0 auto 0 auto;
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;
+}
+
+footer span {
+    margin: 0 10px 0 10px
+}
+
+footer a{
+    text-decoration: none;
+    color: white
+}

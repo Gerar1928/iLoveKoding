@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/CSS/styles2.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="icon">
+            <img src="images/software.png">
+            <span>iLoveKoding</span>
+        </div>
+        <ul>
+           <li><a href="/home">Home</a></li>
+           <li><a href="/about-us">About us</a></li>
+           <li><a href="/sign-up">Sign up</a></li>
+       </ul>
+    </div>
+    <div class="sign-up-form">
+        <div class="image">
+            <img src="/images/339670-PAVV0X-636.jpg">
+        </div>
+        <div class="input-fields">
+            <form method="POST" action="/sign-up">
+                <h1>Sign up to <span class="site-name">iLoveKoding</span></h1>
+                <input type="text" name="fName" placeholder="Name" required autocomplete="off">
+                <input type="text" name="lName" placeholder="Last Name" required autocomplete="off">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <span class="email-warning">Please enter a valid Email Address</span>
+                <input type="password" name="password" placeholder="Password" required>
+                <span class="password-warning">Password doesn't match</span>
+                <input type="password" name="password2" placeholder="Confirm Password" required>
+                <input type="checkbox" name="checkBox">I have read and agree to receive promotional emails.
+                <input type="submit">
+                <span class="terms-warning">You have to agree to the terms and conditions</span>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <span>© 2020 Gerar Almonte</span>
+    </footer>
+
+    <script src="/JavaScript/script.js"></script>
+</body>
+</html>
